@@ -32,7 +32,7 @@ jobs:
             ${{ runner.os }}-npm-
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --prefix starter/frontend
 
       - name: Lint code
         run: npm run lint
@@ -57,7 +57,7 @@ jobs:
             ${{ runner.os }}-npm-
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --prefix starter/frontend
 
       - name: Run tests
         run: npm test
