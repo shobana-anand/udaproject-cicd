@@ -68,7 +68,7 @@ jobs:
         run: npm install --prefix starter/frontend
 
       - name: Run tests
-        run: npm test --prefix starter/frontend --passWithNoTests`
+        run: npm test --prefix starter/frontend 
 
   build:
     runs-on: ubuntu-latest
